@@ -1,225 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Futuristic Portfolio</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kritin Panda | Portfolio</title>
 
-    /* Body */
-    body {
-      font-family: 'Orbitron', sans-serif;
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Stars Background */
-    .stars {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      overflow: hidden;
-    }
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: #0ff;
-      border-radius: 50%;
-      animation: twinkle 3s infinite;
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.2; }
-      50% { opacity: 1; }
-    }
-
-    /* Navigation */
-    header {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #0ff;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 20px;
-    }
-    nav ul li a {
-      color: #0ff;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 2px;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    nav ul li a:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-    section h1, section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #0ff;
-      text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
-      animation: glowPulse 2.5s infinite alternate;
-    }
-    @keyframes glowPulse {
-      from { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
-      to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
-    }
-    section p, section li {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 15px auto;
-    }
-
-    /* Neon Card for Projects */
-    .project-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid #0ff;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #0ff, 0 0 40px #0ff;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      border: 2px solid #0ff;
-      border-radius: 25px;
-      color: #0ff;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      text-decoration: none;
-      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
-    }
-    .btn:hover {
-      background: #0ff;
-      color: #000;
-      box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 45px #0ff;
-      transform: scale(1.05);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.8);
-      border-top: 1px solid #0ff;
-      font-size: 0.9rem;
-    }
-  </style>
-  <!-- Futuristic font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Stars background -->
-  <div class="stars" id="stars"></div>
 
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="glass">
+    <h2>Kritin</h2>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h1>👾 Hi, I'm Kritin</h1>
-    <p>Welcome to my futuristic personal website.</p>
-    <a href="#about" class="btn">Explore</a>
+  <section class="hero glass">
+    <h1>Hi, I'm <span>Kritin Panda</span></h1>
+    <p>Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Kritin Panda is a passionate innovator with a deep love for technology, design, and creating futuristic solutions 🚀. Always curious and forward-thinking, Kritin blends creativity with cutting-edge ideas to build experiences that push boundaries and make an impact. With a mindset rooted in exploration and growth, he thrives on turning imagination into reality—whether it’s through tech, design, or visionary projects.</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-card">
-      <h3>Project 1</h3>
-      <p>In progess</p>
-    </div>
-    <div class="project-card">
-      <h3>Project 2</h3>
-      <p>In progress</p>
+  <section id="skills" class="section glass">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>C</span>
+      <span>C++</span>
+      <span>Python</span>
+      <span>Java</span>
+      <span>SQL</span>
+      <span>Data Structures</span>
+      <span>OOPs</span>
+      <span>Problem Solving</span>
+      <span>Team Collaboration</span>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:kritin.panda@gmail.com" class="btn">kritin.panda@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kritin-panda-697774308/" target="_blank" class="btn">My LinkedIn</a></p>
+  <section id="projects" class="section glass">
+    <h2>Projects</h2>
+
+    <a href="https://kritinsynced.github.io/PageMinder/" 
+       target="_blank" 
+       class="project-link">
+
+      <div class="card project-card">
+        <h3>Page Minder</h3>
+        <p><strong>Library Management System</strong></p>
+        <p>
+          A web-based library management system designed to manage books,
+          users, and issue/return operations efficiently.
+        </p>
+        <span class="visit">Click to Visit →</span>
+      </div>
+
+    </a>
+  </section>
+
+  <section id="education" class="section glass">
+    <h2>Education</h2>
+    <p><strong>DPS Damanjodi, Odisha</strong></p>
+    <p>2010 – 2024</p>
+    <br>
+    <p><strong>VIT-AP University</strong></p>
+    <p>2024 – 2028</p>
+  </section>
+
+  <section id="contact" class="section glass">
+    <h2>Contact</h2>
+    <p>Email: 
+      <a href="mailto:kritin.panda@gmail.com">
+        kritin.panda@gmail.com
+      </a>
+    </p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/kritin-panda-697774308" target="_blank">
+        View Profile
+      </a>
+    </p>
   </section>
 
   <footer>
-    <p>© 2025 Kritin | Designed with 💙</p>
+    <p>© 2026 Kritin Panda</p>
   </footer>
 
-  <script>
-    // Smooth scroll effect
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    });
-
-    // Stars background generator
-    const starsContainer = document.getElementById("stars");
-    for (let i = 0; i < 100; i++) {
-      let star = document.createElement("div");
-      star.classList.add("star");
-      star.style.top = Math.random() * 100 + "%";
-      star.style.left = Math.random() * 100 + "%";
-      star.style.animationDuration = (2 + Math.random() * 3) + "s";
-      starsContainer.appendChild(star);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
