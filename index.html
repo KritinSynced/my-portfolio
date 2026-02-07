@@ -5,90 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kritin Panda | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <nav class="glass">
-    <h2>Kritin</h2>
-    <ul>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<header class="navbar">
+  <h2>KP.</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <section class="hero glass">
-    <h1>Hi, I'm <span>Kritin Panda</span></h1>
-    <p>Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
-  </section>
+<!-- HERO SECTION (kept similar) -->
+<section id="home" class="hero">
+  <h1>Hi, I'm <span>Kritin Panda</span></h1>
+  <h2><span id="typing"></span></h2>
+</section>
 
-  <section id="skills" class="section glass">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span>C</span>
-      <span>C++</span>
-      <span>Python</span>
-      <span>Java</span>
-      <span>SQL</span>
-      <span>Data Structures</span>
-      <span>OOPs</span>
-      <span>Problem Solving</span>
-      <span>Team Collaboration</span>
-    </div>
-  </section>
-
-  <section id="projects" class="section glass">
-    <h2>Projects</h2>
-
-    <a href="https://kritinsynced.github.io/PageMinder/" 
-       target="_blank" 
-       class="project-link">
-
-      <div class="card project-card">
-        <h3>Page Minder</h3>
-        <p><strong>Library Management System</strong></p>
-        <p>
-          A web-based library management system designed to manage books,
-          users, and issue/return operations efficiently.
-        </p>
-        <span class="visit">Click to Visit →</span>
-      </div>
-
-    </a>
-  </section>
-
-  <section id="education" class="section glass">
-    <h2>Education</h2>
-    <p><strong>DPS Damanjodi, Odisha</strong></p>
-    <p>2010 – 2024</p>
-    <br>
-    <p><strong>VIT-AP University</strong></p>
-    <p>2024 – 2028</p>
-  </section>
-
-  <section id="contact" class="section glass">
-    <h2>Contact</h2>
-    <p>Email: 
-      <a href="mailto:kritin.panda@gmail.com">
-        kritin.panda@gmail.com
-      </a>
-    </p>
+<!-- ABOUT -->
+<section id="about" class="section glass about">
+  <img src="me.jpg" alt="Kritin Panda">
+  <div>
+    <h2>About Me</h2>
     <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/kritin-panda-697774308" target="_blank">
-        View Profile
-      </a>
+      I’m a Computer Science Engineering student at VIT-AP who enjoys turning ideas
+      into practical systems. I like working on clean logic, intuitive interfaces,
+      and projects that actually solve problems. Currently exploring full-stack
+      development, databases, and startup-oriented tech.
     </p>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Kritin Panda</p>
-  </footer>
+<!-- PROJECT -->
+<section id="projects" class="section">
+  <h2>Project</h2>
 
-  <script src="script.js"></script>
+  <div class="project-card glass"
+       onclick="window.open('https://kritinsynced.github.io/PageMinder/', '_blank')">
+    <h3>📚 Page Minder</h3>
+    <p>Library Management System designed to manage books, users, and records efficiently.</p>
+    <span>Click to view project →</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section glass contact">
+  <h2>Contact Me</h2>
+  <p>📧 kritin.panda@gmail.com</p>
+
+  <div class="icons">
+    <a href="https://github.com/KritinSynced" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/kritin-panda-697774308/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</section>
+
+<footer>
+  © 2026 • Created by Kritin Panda
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
