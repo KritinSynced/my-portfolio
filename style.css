@@ -1,131 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+const text = ["B.Tech CSE Student", "Developer", "Future Entrepreneur"];
+let index = 0;
+let charIndex = 0;
+const typingElement = document.getElementById("typing");
 
-body {
-  background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
-  color: white;
-  scroll-behavior: smooth;
-}
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  z-index: 10;
-}
-
-.navbar a {
-  margin-left: 25px;
-  color: white;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.navbar a:hover {
-  opacity: 1;
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 56px;
-}
-
-.hero span {
-  color: #9f7aea;
-}
-
-.hero h2 {
-  margin-top: 15px;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-.section {
-  max-width: 1100px;
-  margin: 100px auto;
-  padding: 50px;
-}
-
-.glass {
-  background: rgba(255,255,255,0.08);
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-}
-
-.about {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.about img {
-  width: 220px;
-  border-radius: 20px;
-  border: 2px solid rgba(255,255,255,0.2);
-}
-
-.project-card {
-  padding: 40px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  background: rgba(255,255,255,0.15);
-}
-
-.project-card span {
-  display: inline-block;
-  margin-top: 10px;
-  opacity: 0.7;
-}
-
-.contact {
-  text-align: center;
-}
-
-.icons {
-  margin-top: 20px;
-}
-
-.icons a {
-  font-size: 30px;
-  margin: 0 15px;
-  color: white;
-  transition: 0.3s;
-}
-
-.icons a:hover {
-  color: #9f7aea;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  opacity: 0.6;
-}
-
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    text-align: center;
+function typeEffect() {
+  if (charIndex < text[index].length) {
+    typingElement.textContent += text[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, 100);
+  } else {
+    setTimeout(eraseEffect, 1500);
   }
 }
+
+function eraseEffect() {
+  if (charIndex > 0) {
+    typingElement.textContent = text[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseEffect, 60);
+  } else {
+    index = (index + 1) % text.length;
+    setTimeout(typeEffect, 400);
+  }
+}
+
+typeEffect();
