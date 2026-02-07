@@ -6,7 +6,6 @@ A responsive design that adapts seamlessly to all devices.
 Sections highlighting my bio, skills, projects, and contact details.
 Interactive elements for an engaging user experience.
 Live Demo: https://kritinsynced.github.io/my-portfolio/
-Repository: https://github.com/kritinsynced/my-portfolio
 
 Features
 Responsive Design: Fully optimized for desktop, tablet, and mobile devices.
