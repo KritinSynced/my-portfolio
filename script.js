@@ -1,4 +1,4 @@
-const text = ["B.Tech CSE Student", "Developer", "Future Entrepreneur"];
+const text = ["B.Tech CSE Student", "Developer", "Digital Nomad"];
 let index = 0;
 let charIndex = 0;
 const typingElement = document.getElementById("typing");
@@ -25,3 +25,4 @@ function eraseEffect() {
 }
 
 typeEffect();
+
