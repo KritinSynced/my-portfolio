@@ -25,7 +25,7 @@ Contributing
 This is a personal project, but suggestions are welcome! If you'd like to contribute:
 
 Let's connect!
-Email: your.email@example.com
-LinkedIn: Your LinkedIn Profile
+Email: kritin.panda@gmail.com
+LinkedIn: https://www.linkedin.com/in/kritin-panda-697774308/
 GitHub: https://github.com/kritinsynced
 Portfolio: https://kritinsynced.github.io/my-portfolio/
