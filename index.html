@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
 <!-- Loading Screen -->
@@ -22,135 +21,211 @@
 
 <!-- Main Content -->
 <div id="main-content" class="main-content">
-<header class="navbar">
-  <h2>KP</h2>
+  <header class="navbar">
+    <h2>KP</h2>
 
-  <div class="menu-icon" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav id="nav-links">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#projects" onclick="closeMenu()">Projects</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-  </nav>
-</header>
-
-
-<!-- HERO SECTION -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <h1 class="animated-name">KRITIN PANDA</h1>
-    <div class="hero-subtitle">
-      <span class="digital-nomad">DIGITAL NOMAD</span>
-      <div class="about-me-link">
-        <a href="#about">
-          <span>ABOUT ME</span>
-          <i class="fas fa-arrow-down"></i>
-        </a>
-      </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    
-    <div class="short-description">
-      <p>
-        I'm a Computer Science Engineering student passionate about clean code, 
-        real-world problem solving, and continuously learning new technologies 
-        to grow as a developer.
-      </p>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="section about-section">
-  <div class="about-container glass">
-    <div class="about-content">
-      <h2 class="about-title">About Me</h2>
-      <p class="about-text">
-        I'm a Computer Science Engineering student at VIT-AP who enjoys turning ideas
-        into practical systems. I like working on clean logic, intuitive interfaces,
-        and projects that actually solve problems. Currently exploring full-stack
-        development, databases, and startup-oriented tech.
-      </p>
-      <div class="skills">
-        <div class="skill-tag">Web Development</div>
-        <div class="skill-tag">UI/UX Design</div>
-        <div class="skill-tag">Problem Solving</div>
-        <div class="skill-tag">Full-Stack</div>
-        <div class="skill-tag">Clean Code</div>
-      </div>
-    </div>
-  </div>
-</section>
+    <nav id="nav-links">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
 
-<!-- PROJECTS -->
-<section id="projects" class="section projects-section">
-  <h2 class="section-title">My Projects</h2>
-
-  <div class="project-card glass"
-       onclick="window.open('https://kritinsynced.github.io/PageMinder/', '_blank')">
-    <div class="project-icon">
-      <i class="fas fa-book"></i>
-    </div>
-    <h3>PageMinder</h3>
-    <p class="project-description">
-      A modern library management system that helps organize books, 
-      track records, and simplify library operations through a clean, 
-      efficient, and user-friendly interface.
-    </p>
-    <div class="tech-stack">
-      <span class="tech-tag">HTML</span>
-      <span class="tech-tag">CSS</span>
-      <span class="tech-tag">JavaScript</span>
-      <span class="tech-tag">LocalStorage</span>
-    </div>
-    <span class="project-link">View Project <i class="fas fa-external-link-alt"></i></span>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact-section">
-  <div class="contact-container glass">
-    <h2 class="section-title">Get In Touch</h2>
-    
-    <div class="contact-info">
-      <div class="contact-item">
-        <div class="contact-icon-wrapper">
-          <i class="fas fa-envelope contact-icon"></i>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="animated-name">KRITIN PANDA</h1>
+      <div class="hero-subtitle">
+        <span class="digital-nomad">DIGITAL NOMAD</span>
+        <div class="about-me-link">
+          <a href="#about">
+            <span>ABOUT ME</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
         </div>
-        <a href="mailto:kritin.panda@gmail.com" class="contact-link">kritin.panda@gmail.com</a>
+      </div>
+      
+      <div class="short-description">
+        <p>
+          I'm a Computer Science Engineering student passionate about clean code, 
+          real-world problem solving, and continuously learning new technologies 
+          to grow as a developer.
+        </p>
       </div>
     </div>
+  </section>
 
-    <div class="social-section">
-      <h3>Connect with me</h3>
-      <div class="social-icons">
-        <a href="https://github.com/KritinSynced" target="_blank" class="social-icon" title="GitHub">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/kritin-panda-697774308/" target="_blank" class="social-icon" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://www.instagram.com/kritinpanda/" target="_blank" class="social-icon" title="Instagram">
-          <i class="fab fa-instagram"></i>
-          <span>Instagram</span>
-        </a>
+  <!-- ABOUT SECTION WITH SKILLS -->
+  <section id="about" class="section about-section">
+    <div class="about-container glass">
+      <div class="about-content">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-text">
+          I'm a Computer Science Engineering student at VIT-AP who enjoys turning ideas
+          into practical systems. I like working on clean logic, intuitive interfaces,
+          and projects that actually solve problems. Currently exploring full-stack
+          development, databases, and startup-oriented tech.
+        </p>
+        
+        <!-- Skills Section -->
+        <div class="skills-section">
+          <h3 class="skills-title">Technical Skills</h3>
+          
+          <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-code"></i>
+                Programming Languages
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">Java</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">C++</span>
+                <span class="skill-item">Python</span>
+              </div>
+            </div>
+            
+            <!-- Web & Technologies -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-globe"></i>
+                Web & Technologies
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">Basic JavaScript</span>
+              </div>
+            </div>
+            
+            <!-- Database -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-database"></i>
+                Database
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">MySQL</span>
+              </div>
+            </div>
+            
+            <!-- Core Concepts -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-brain"></i>
+                Core Concepts
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">Data Structures & Algorithms</span>
+                <span class="skill-item">OOP</span>
+                <span class="skill-item">DBMS Fundamentals</span>
+              </div>
+            </div>
+            
+            <!-- Tools & Platforms -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-tools"></i>
+                Tools & Platforms
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub</span>
+              </div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="skill-category">
+              <h4 class="category-title">
+                <i class="fas fa-users"></i>
+                Soft Skills
+              </h4>
+              <div class="skill-items">
+                <span class="skill-item">Problem Solving</span>
+                <span class="skill-item">Analytical Thinking</span>
+                <span class="skill-item">Quick Learner</span>
+                <span class="skill-item">Adaptability</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="footer-content">
-    <p>© 2026 • Created by Kritin Panda</p>
-    <p class="footer-note">Built with passion and clean code</p>
-  </div>
-</footer>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section projects-section">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-card glass"
+         onclick="window.open('https://kritinsynced.github.io/PageMinder/', '_blank')">
+      <div class="project-icon">
+        <i class="fas fa-book"></i>
+      </div>
+      <h3>PageMinder</h3>
+      <p class="project-description">
+        A modern library management system that helps organize books, 
+        track records, and simplify library operations through a clean, 
+        efficient, and user-friendly interface.
+      </p>
+      <div class="tech-stack">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">LocalStorage</span>
+      </div>
+      <span class="project-link">View Project <i class="fas fa-external-link-alt"></i></span>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-container glass">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon-wrapper">
+            <i class="fas fa-envelope contact-icon"></i>
+          </div>
+          <a href="mailto:kritin.panda@gmail.com" class="contact-link">kritin.panda@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Connect with me</h3>
+        <div class="social-icons">
+          <a href="https://github.com/KritinSynced" target="_blank" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kritin-panda-697774308/" target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/kritinpanda/" target="_blank" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 • Created by Kritin Panda</p>
+      <p class="footer-note">Built with passion and clean code</p>
+    </div>
+  </footer>
 </div>
 
 <script src="script.js"></script>
