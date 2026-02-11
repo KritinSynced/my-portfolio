@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
   const loadingScreen = document.getElementById('loading-screen');
   const mainContent = document.getElementById('main-content');
   
-  // Show loading screen for 1.8 seconds (slightly shorter)
+  // Show loading screen for 1.8 seconds
   setTimeout(function() {
     loadingScreen.style.opacity = '0';
     loadingScreen.style.visibility = 'hidden';
@@ -16,18 +16,11 @@ window.addEventListener('load', function() {
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('show');
-  
-  // Animate hamburger icon
-  const menuIcon = document.querySelector('.menu-icon');
-  menuIcon.classList.toggle('active');
 }
 
 function closeMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.remove('show');
-  
-  const menuIcon = document.querySelector('.menu-icon');
-  menuIcon.classList.remove('active');
 }
 
 // Animated Name Effect
@@ -35,6 +28,7 @@ const nameElement = document.querySelector('.animated-name');
 const nameText = 'KRITIN PANDA';
 
 function animateName() {
+  if (!nameElement) return;
   nameElement.innerHTML = '';
   let i = 0;
   
@@ -47,11 +41,6 @@ function animateName() {
       span.style.display = 'inline-block';
       span.style.animation = `fadeInUp 0.4s ease-out ${i * 0.05}s forwards`;
       nameElement.appendChild(span);
-      
-      // Add space handling
-      if (char === ' ') {
-        nameElement.appendChild(document.createTextNode(' '));
-      }
       
       i++;
       setTimeout(typeChar, 50);
@@ -77,11 +66,9 @@ window.addEventListener('scroll', function() {
     navbar.style.background = 'rgba(15, 12, 41, 0.85)';
     navbar.style.boxShadow = 'none';
   } else if (currentScroll > lastScroll && currentScroll > 100) {
-    // Scrolling down
     navbar.style.background = 'rgba(15, 12, 41, 0.95)';
     navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
   } else {
-    // Scrolling up
     navbar.style.background = 'rgba(15, 12, 41, 0.9)';
     navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
   }
@@ -128,9 +115,7 @@ if (projectCard) {
     }
   });
   
-  // Add click sound effect (optional)
   projectCard.addEventListener('click', function() {
-    // You can add a subtle click effect here
     this.style.transform = 'scale(0.98)';
     setTimeout(() => {
       this.style.transform = '';
@@ -169,14 +154,14 @@ window.addEventListener('scroll', updateActiveNav);
 document.addEventListener('DOMContentLoaded', function() {
   updateActiveNav();
   
-  // Add subtle animation to skill tags
-  const skillTags = document.querySelectorAll('.skill-tag');
-  skillTags.forEach((tag, index) => {
-    tag.style.animation = `fadeInUp 0.5s ease-out ${index * 0.1}s both`;
+  // Add subtle animation to skill items
+  const skillItems = document.querySelectorAll('.skill-item');
+  skillItems.forEach((item, index) => {
+    item.style.animation = `fadeInUp 0.5s ease-out ${index * 0.02}s both`;
   });
 });
 
-// Add typing effect to loading screen dots (additional effect)
+// Add typing effect to loading screen dots
 function animateLoadingDots() {
   const dots = document.querySelectorAll('.dot');
   let dotIndex = 0;
